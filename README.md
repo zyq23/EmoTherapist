@@ -1,4 +1,4 @@
-##EmoTherapist: A Mental Health Dialogue System with Real-Time Emotion Recognition Integration
+#EmoTherapist: A Mental Health Dialogue System with Real-Time Emotion Recognition Integration
 <p align="center">
 <img src="https://img.shields.io/badge/Paper-Under_Review-blue.svg" alt="Paper Status">
 <img src="https://img.shields.io/badge/Python-3.8%2B-green.svg" alt="Python Version">
