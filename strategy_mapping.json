@@ -1,0 +1,182 @@
+{
+  "version": "2.0",
+  "theory_framework": {
+    "emotion_model": "Plutchik情绪轮改良版",
+    "therapy_orientation": "整合取向（CBT+人本+动机访谈）"
+  },
+  "strategies": [
+    {
+      "strategy_id": "STRAT-EMER-001",
+      "name": "危机干预紧急协议",
+      "description": "用于自杀倾向或急性心理危机",
+      "emotion": ["sad", "angry", "fear"],
+      "intensity_range": [0.9, 1.0],
+      "priority_level": 10,
+      "scenario": "用户表达自杀意念或极端自毁倾向",
+      "psychological_techniques": ["安全计划协议", "危机干预六步法"],
+      "response_template": {
+        "phase1_risk_assessment": "你刚才提到[具体危险表述]，这让我非常担心。你能多告诉我一些你的具体计划吗？",
+        "phase2_stabilization": "让我们先确保你现在是安全的。你现在在什么地方？",
+        "phase3_resource_provision": "我建议立即联系[当地心理危机热线]，电话号码是...",
+        "phase4_coping": "我们可以一起做个简单的 grounding 练习：说出你周围5个蓝色的物体"
+      },
+      "avoidance_guide": {
+        "phrases_to_avoid": ["这只是一时的情绪", "你想想你的家人"],
+        "technique_limitations": ["避免认知重构", "暂不探讨诱因"]
+      },
+      "professional_references": ["WHO心理健康危机干预指南", "DSM-5自杀风险评估标准"],
+      "trigger_keywords": ["自杀", "不想活了", "结束一切", "割腕", "跳楼"],
+      "is_fallback": false,
+      "emotion_guideline": "优先确保生命安全，提供即时支持"
+    },
+    {
+      "strategy_id": "STRAT-ANXIETY-001",
+      "name": "高焦虑安抚策略",
+      "description": "处理惊恐发作或急性焦虑",
+      "emotion": "fear",
+      "intensity_range": [0.7, 1.0],
+      "priority_level": 8,
+      "scenario": "用户出现呼吸急促、过度换气等生理症状",
+      "psychological_techniques": ["54321 grounding技术", "正念呼吸法"],
+      "response_template": {
+        "step1_normalization": "这种突如其来的恐惧感确实非常难受，但它是暂时的",
+        "step2_grounding": "请跟我一起：说出你周围3种听到的声音...",
+        "step3_breathing": "我们来做箱式呼吸：吸气4秒-屏息4秒-呼气4秒",
+        "step4_reorientation": "你现在是在[具体地点]，时间是[当前时间]"
+      },
+      "avoidance_guide": {
+        "phrases_to_avoid": ["别担心", "这没什么可怕的"],
+        "technique_limitations": ["避免逻辑分析", "暂不讨论诱因"]
+      },
+      "professional_references": ["Barlow焦虑障碍治疗手册", "DBT痛苦承受技巧"],
+      "trigger_keywords": ["喘不过气", "要死了", "心脏跳出来", "失控"],
+      "is_fallback": false,
+      "emotion_guideline": "帮助稳定生理反应，重建安全感"
+    },
+    {
+      "strategy_id": "STRAT-DEPR-001",
+      "name": "重度抑郁支持策略",
+      "description": "处理严重抑郁状态",
+      "emotion": "sad",
+      "intensity_range": [0.7, 1.0],
+      "priority_level": 7,
+      "scenario": "用户表达绝望感或兴趣丧失",
+      "psychological_techniques": ["行为激活", "慈悲聚焦疗法"],
+      "response_template": {
+        "step1_presence": "我在这里陪着你，不需要勉强说什么",
+        "step2_normalization": "抑郁就像心理感冒，不是你的错",
+        "step3_minimal_action": "如果现在做一个小动作，比如喝口水，你觉得可以吗？",
+        "step4_hope_statement": "虽然现在感觉很黑暗，但治疗抑郁是有有效方法的"
+      },
+      "avoidance_guide": {
+        "phrases_to_avoid": ["振作起来", "看看好的一面"],
+        "technique_limitations": ["避免积极暗示", "暂不设定目标"]
+      },
+      "professional_references": ["Beck认知疗法抑郁模块", "Williams抑郁行为激活指南"],
+      "trigger_keywords": ["毫无意义", "撑不下去", "行尸走肉", "解脱"],
+      "is_fallback": false,
+      "emotion_guideline": "提供存在性陪伴，培养微小希望"
+    },
+    {
+      "strategy_id": "STRAT-ANGER-001",
+      "name": "愤怒降温策略",
+      "description": "处理高强度的愤怒情绪",
+      "emotion": "angry",
+      "intensity_range": [0.7, 1.0],
+      "priority_level": 6,
+      "scenario": "用户表达强烈愤怒或攻击性语言",
+      "psychological_techniques": ["非暴力沟通", "情绪命名技术"],
+      "response_template": {
+        "step1_acknowledgement": "我能感受到你强烈的愤怒（情绪命名）",
+        "step2_physical_grounding": "注意到你的拳头握得很紧，我们一起做三次深呼吸好吗？",
+        "step3_needs_exploration": "这种愤怒背后，是否有什么对你特别重要的需求没有被满足？",
+        "step4_boundary_setting": "我们可以用什么样的方式既表达立场又保护自己？"
+      },
+      "avoidance_guide": {
+        "phrases_to_avoid": ["冷静下来", "这没什么大不了的"],
+        "technique_limitations": ["避免立即解决问题", "暂不进行认知辩论"]
+      },
+      "professional_references": ["Marsha Linehan情绪调节理论", "ACT疗法愤怒管理模块"],
+      "trigger_keywords": ["气死我了", "混蛋", "受不了", "报复"],
+      "is_fallback": false,
+      "emotion_guideline": "先处理生理唤起，再探索需求"
+    },
+    {
+      "strategy_id": "STRAT-GRIEF-001",
+      "name": "哀伤处理策略",
+      "description": "处理丧失相关的哀伤反应",
+      "emotion": "sad",
+      "intensity_range": [0.4, 0.7],
+      "priority_level": 5,
+      "scenario": "用户经历亲人离世或重大失去",
+      "psychological_techniques": ["双程哀伤模型", "意义重建"],
+      "response_template": {
+        "step1_witnessing": "你愿意多告诉我一些关于[逝者]的事吗？",
+        "step2_validation": "这种撕心裂肺的痛苦是爱的延续",
+        "step3_continuity": "[逝者]对你来说意味着什么？这些意义会如何继续存在？",
+        "step4_ritual_suggestion": "是否考虑过用某种方式纪念这种特别的联结？"
+      },
+      "avoidance_guide": {
+        "phrases_to_avoid": ["时间会治愈一切", "他/她不希望你这样"],
+        "technique_limitations": ["避免时间限定", "暂不推进接受"]
+      },
+      "professional_references": ["Worden哀伤治疗四任务", "Neimeyer意义重建理论"],
+      "trigger_keywords": ["想念", "再也见不到", "如果当初", "舍不得"],
+      "is_fallback": false,
+      "emotion_guideline": "见证痛苦，帮助重建意义"
+    },
+    {
+      "strategy_id": "STRAT-ADJ-001",
+      "name": "适应问题策略",
+      "description": "处理生活变化带来的适应困难",
+      "emotion": "neutral",
+      "intensity_range": [0.2, 0.5],
+      "priority_level": 3,
+      "scenario": "职业转型或生活环境变化",
+      "psychological_techniques": ["压力管理ABC", "问题解决疗法"],
+      "response_template": {
+        "step1_appraisal": "这个变化对你来说最困难的部分是什么？",
+        "step2_resource": "你过去处理类似挑战时用过哪些有效方法？",
+        "step3_small_step": "如果从1-10打分，你觉得最先可以改善哪个小环节？",
+        "step4_support": "哪些人可以成为这个过渡期的支持资源？"
+      },
+      "avoidance_guide": {
+        "phrases_to_avoid": ["这很正常", "别人都能适应"],
+        "technique_limitations": ["避免泛化比较", "暂不设定时间表"]
+      },
+      "professional_references": ["Lazarus压力应对理论", "D'Zurilla问题解决疗法"],
+      "trigger_keywords": ["不适应", "不知道怎么办", "新环境", "压力大"],
+      "is_fallback": false,
+      "emotion_guideline": "聚焦具体问题，发掘现有资源"
+    },
+    {
+      "strategy_id": "STRAT-BASE-001",
+      "name": "基础共情策略",
+      "description": "通用情绪支持框架",
+      "emotion": "universal",
+      "intensity_range": [0.0, 1.0],
+      "priority_level": 1,
+      "scenario": "通用心理支持场景",
+      "psychological_techniques": ["主动倾听", "情感反映"],
+      "response_template": {
+        "step1_reflection": "听起来你感到[情绪标签]",
+        "step2_exploration": "你愿意多说说这种感受吗？",
+        "step3_summary": "所以我听到的是...[总结关键点]"
+      },
+      "avoidance_guide": {
+        "phrases_to_avoid": ["我理解", "你应该"],
+        "technique_limitations": ["避免过早建议", "暂不问题解决"]
+      },
+      "professional_references": ["Carl Rogers人本主义疗法", "共情反应核心技巧"],
+      "is_fallback": true,
+      "emotion_guideline": "建立信任关系，促进自我探索"
+    }
+  ],
+  "metadata": {
+    "development_notes": [
+      "所有策略需配合心理咨询伦理守则使用",
+      "危机干预策略必须优先执行",
+      "情绪强度范围定义：0-1.0（1.0为最高强度）"
+    ]
+  }
+}
